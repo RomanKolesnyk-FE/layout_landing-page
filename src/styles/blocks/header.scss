@@ -8,18 +8,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-.header__title {
-  margin: 0;
-  font-style: bold;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: 100%;
-  color: #FFF;
-}
+  &__title {
+    margin: 0;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 100%;
+    color: #fff;
+  }
 
-.header__bottom {
-  padding: 0 20px 40px;
+  &__bottom {
+    padding-bottom: 40px;
+    @include contentPaddingInLine;
+  }
 }
