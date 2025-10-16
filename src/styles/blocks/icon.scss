@@ -3,21 +3,28 @@
   height: 24px;
   width: 24px;
   background-size: cover;
+  transition: transform 0.3s;
 
-  @include onTablet {
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
 
   &--phone {
-    background-image: url(../images/icons/phone-icon.png);
+    background-image: url(../images/icons/phone-icon.svg);
   }
 
   &--menu {
-    background-image: url(../images/icons/burger-menu-icon.png);
+    background-image: url(../images/icons/burger-menu-icon.svg);
+
+    &:hover {
+      background-image: url(../images/icons/burger-menu-icon-hover.svg);
+    }
   }
 
   &--close {
-    background-image: url(../images/icons/icon-close.png);
+    background-image: url(../images/icons/icon-close.svg);
   }
 }

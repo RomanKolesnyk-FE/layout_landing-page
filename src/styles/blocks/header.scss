@@ -1,7 +1,7 @@
 .header {
   box-sizing: border-box;
   height: 100vh;
-  background-image: url(../images/icons/header-bg-mobile.png);
+  background-image: url(../images/icons/header-bg.png);
   background-size: cover;
   background-position: center;
 
@@ -17,10 +17,19 @@
     letter-spacing: 0;
     line-height: 100%;
     color: #fff;
+
+    @include on-tablet {
+      font-size: 40px;
+    }
   }
 
   &__bottom {
     padding-bottom: 40px;
-    @include contentPaddingInLine;
+
+    @include content-padding-in-line;
+
+    @include on-tablet {
+      padding-bottom: 64px;
+    }
   }
 }
