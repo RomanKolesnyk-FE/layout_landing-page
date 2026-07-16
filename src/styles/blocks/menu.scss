@@ -1,8 +1,10 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #f9f9f9;
+
   font-weight: 700;
+
+  background-color: #f9f9f9;
   text-transform: uppercase;
 
   &__top {
@@ -23,6 +25,7 @@
 
   &__phone-number {
     display: block;
+
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -33,8 +36,8 @@
 
   &__call-to-order {
     display: block;
-    width: fit-content;
 
+    width: fit-content;
     padding-bottom: 4px;
     border-bottom: 1px solid $main-text-color;
 
