@@ -2,10 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-block: 24px;
-
-  @include content-padding-in-line;
 
   @include on-tablet {
     padding-block: 32px;

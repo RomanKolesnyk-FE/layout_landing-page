@@ -1,11 +1,8 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-
   font-weight: 700;
-
   background-color: #f9f9f9;
-  text-transform: uppercase;
 
   &__top {
     margin-bottom: 32px;
@@ -17,10 +14,6 @@
 
   &__nav {
     margin-bottom: 48px;
-  }
-
-  &__content {
-    @include content-padding-in-line;
   }
 
   &__phone-number {
